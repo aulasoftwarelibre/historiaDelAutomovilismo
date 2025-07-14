@@ -1,0 +1,27 @@
+.container {
+  background: linear-gradient(180deg, #fff, #f0f0f0, #666);
+  height: 100vh;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.title {
+  font-family: "Geist", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.subtitle {
+  font-family: "Geist", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 1rem;
+}
