@@ -5,6 +5,8 @@ import Image from "next/image";
 const Walkthrough = () => {
   return (
     <div className={styles.container}>
+      <h1>Prueba de push</h1>
+
       <div className={styles.centered}>
         <h1 className={styles.title}>Walkthrough rapido</h1>
         <div className={styles.logoContainer}>
