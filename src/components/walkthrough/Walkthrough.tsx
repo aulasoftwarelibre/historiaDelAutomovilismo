@@ -7,12 +7,14 @@ const Walkthrough = () => {
     <div className={styles.container}>
       <div className={styles.centered}>
         <h1 className={styles.title}>Walkthrough rapido</h1>
-        <Image
-          src="/logo-cuadrado-simple.svg"
-          alt="logo"
-          width={200}
-          height={200}
-        />
+        <div className={styles.logoContainer}>
+          <Image
+            src="/logo-cuadrado-simple.svg"
+            alt="logo"
+            fill
+            className={styles.logoImage}
+          />
+        </div>
       </div>
 
       <div className={styles.centered}>
@@ -37,6 +39,20 @@ const Walkthrough = () => {
             Invertido
           </button>
         </div>
+      </div>
+
+      <div className={styles.centered}>
+        <h2 className={styles.mediaQuery}>Prueba de Media Queries</h2>
+      </div>
+
+      <div className={styles.centered}>
+        <h2 className={styles.subtitle}>Prueba de Enlaces</h2>
+        <a
+          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          className="text-blue-500 underline"
+        >
+          Pinchame
+        </a>
       </div>
     </div>
   );

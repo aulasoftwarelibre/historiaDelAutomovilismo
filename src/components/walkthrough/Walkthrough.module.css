@@ -25,3 +25,26 @@
   color: #000;
   margin-bottom: 1rem;
 }
+
+.mediaQuery {
+  font-family: "Geist", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .mediaQuery {
+    font-size: 1.5rem;
+  }
+}
+
+.logoContainer {
+  position: relative;
+  width: calc(12.5vw + 12.5vh - 10vmin);
+  height: calc(12.5vw + 12.5vh - 10vmin);
+}
+.logoImage {
+  object-fit: contain;
+}
