@@ -1,9 +1,11 @@
-import Walkthrough from "@/components/walkthrough/Walkthrough";
+import Invitados from "@/components/Invitados/Invitados";
 
 export default function Home() {
   return (
     <main>
-      <Walkthrough />
+      <Invitados />
     </main>
   );
 }
+
+

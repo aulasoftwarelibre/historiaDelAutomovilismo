@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #2b2d8f;
+  color: white;
+}
+
+/* Contenedor principal */
+.guests {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Título */
+.guests-title {
+  border: 1px solid white;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Grid para invitados */
+.guests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Tarjeta de invitado */
+.guest-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+}
+
+.guest-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.guest-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.guest-name {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.guest-role {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Responsividad */
+@media (max-width: 500px) {
+  .guests-grid {
+    grid-template-columns: 1fr; /* siempre 1 columna */
+  }
+
+  .guest-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .guest-card img {
+    margin-bottom: 0.5rem;
+  }
+}
