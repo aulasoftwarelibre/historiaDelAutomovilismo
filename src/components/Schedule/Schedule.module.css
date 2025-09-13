@@ -1,0 +1,6 @@
+.centered {
+    display: grid;
+    grid-template-columns: 20vw 1fr;
+    grid-gap: 4vw;
+    justify-items: center;
+  }
