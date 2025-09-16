@@ -52,23 +52,23 @@ const days_list: Day[] = [
 export const Schedule = () => {
   return (
     <div className="grid grid-cols-1 items-start bg-[rgb(120,127,246)] text-white justify-items-center">
-      <p className="text-center text-lg md:text-2xl lg:text-4xl p-[1%] mt-10 mb-10 w-4/9 border-1 border-white font-mono tracking-widest">
+      <p className="text-center text-xs md:text-xl lg:text-2xl p-[1%] mt-10 mb-10 w-3/9 border-1 border-white font-mono tracking-widest">
         CALENDARIO
       </p>
       <div className="w-8/9 pb-10">
         {days_list.map((day) => (
           <div key={day.id} className="mb-5">
-            <div className="justify-self-center lg:text-3xl md:text-xl">
+            <div className="justify-self-center text-xs md:text-xl lg:text-2xl font-mono">
               {day.day}
             </div>
             {day.activities.map((activity) => (
               <div key={activity.id} className={styles.centered}>
-                <div className="border-1 border-white font-mono tracking-widest pt-5 pb-5 lg:pl-12 lg:pr-12 md:pl-8 md:pr-8 pl-5 pr-5 mt-5 mb-5 flex flex-col justify-between bg-gradient-to-b from-[rgb(120,127,246)] to-[rgba(41,46,138,0.25)] md:text-lg lg:text-2xl">
+                <div className="border-1 border-white font-mono tracking-widest pt-5 pb-5 lg:pl-12 lg:pr-12 md:pl-8 md:pr-8 pl-5 pr-5 mt-5 mb-5 flex flex-col justify-between bg-[rgb(120,127,246)] md:text-lg lg:text-2xl">
                   <p className="mb-3">{activity.start}</p>
                   <p className="">{activity.end}</p>
                 </div>
-                <div className="border-1 border-white w-[100%]  items-center text-center text-wrap mt-5 mb-5 bg-gradient-to-b from-[rgb(120,127,246)] to-[rgba(41,46,138,0.25)] pb-5">
-                  <p className="lg:text-4xl md:text-2xl text-lg p-2 pt-5 justify-self-center font-mono tracking-widest">
+                <div className="border-1 border-white w-[100%]  items-center text-center text-wrap mt-5 mb-5 bg-[rgb(120,127,246)] pb-5">
+                  <p className="text-xs md:text-xl lg:text-2xl p-2 pt-5 justify-self-center font-mono tracking-widest">
                     {activity.title}
                   </p>
                   <div className=" grid grid-cols-2 items-center">
