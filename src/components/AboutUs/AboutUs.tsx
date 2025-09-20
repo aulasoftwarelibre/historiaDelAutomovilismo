@@ -3,7 +3,7 @@ import styles from "./AboutUs.module.css";
 function AboutUs() {
   return (
     <div className={styles.backgroundColor}>
-      <section className="px-16 pb-8 pt-20 max-w-5xl">
+      <section className="pl-[10%] lg:pl-[5%] pr-[5%] pb-8 pt-20 max-w-5xl">
         <h1 className="font-bold">About us</h1>
         <br></br>
         <h2 className="">
@@ -14,13 +14,13 @@ function AboutUs() {
         </h2>
         <br></br>
         <button
-          className="border border-b-white mt-5 py-5 px-20 sm:px-46 md:px-66 lg:px-76 xl:px-82 shadow-md
+          className="border border-b-white mt-5 py-5 px-26 sm:px-46 md:px-66 lg:px-76 xl:px-82 shadow-md
                hover:shadow-xl transition-shadow duration-300"
         >
           STAY UPDATED
         </button>
       </section>
-      <section className="grid grid-cols-1 px-16 py-5 sm:grid-cols-2 gap-4 max-w-5xl">
+      <section className="grid grid-cols-1 pl-[10%] lg:pl-[5%] pr-[5%] py-5 sm:grid-cols-2 gap-4 max-w-5xl">
         <div>
           <h1 className="font-bold">Socials</h1>
           <a href="https://www.youtube.com/watch?v=ehpgMsgnbIE">
