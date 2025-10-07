@@ -40,33 +40,49 @@ export const Funcion = () => {
 
       <div
         id="textitos"
-        className="pl-[10%] md:mt-[-10vw] lg:mt-[-8vw] mt-[-10%] mb-[10%] order-3 md:order-3"
+        className="md:mt-[-10vw] lg:mt-[-8vw] mt-[-10%] mb-[10%] order-3 md:order-3"
       >
-        <div id="primer-texto" className="grid grid-cols-6 p-10">
-          <div className="col-span-1">
-            <div className="w-6 h-6 rotate-(-90) border-t-4 border-r-4 text-[#787ff6]"></div>
-            <div
-              className="w-6 h-1 mt-[-13] rotate-135"
-              style={{ backgroundColor: "#787ff6" }}
-            ></div>
+        <div id="primer-texto" className="grid grid-cols-6 px-10 pt-10 pb-2">
+          <div className="col-span-1 flex flex-col items-center justify-center -mt-2">
+            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20251114%2F20251125&location=Palacio%20de%20la%20Merced%2C%20Diputaci%C3%B3n%20de%20C%C3%B3rdoba&text=D%C3%A9cada%20en%20marcha%3A%20Aula%20del%20Motor%20y%20Mujer%20en%20la%20Pole">
+              <div className="w-6 h-6 rotate-(-90) border-t-4 border-r-4 text-[#787ff6]"></div>
+              <div
+                className="w-6 h-1 mt-[-13] rotate-135"
+                style={{ backgroundColor: "#787ff6" }}
+              ></div>
+            </a>
           </div>
-          <div className="lg:text-3xl md:text-lg text-s font-normal not-italic text-[#787ff6] col-span-5 pl-4">
-            NOVIEMBRE 14-24
+          <div className="col-span-5 pl-4">
+            <a
+              href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20251114%2F20251125&location=Palacio%20de%20la%20Merced%2C%20Diputaci%C3%B3n%20de%20C%C3%B3rdoba&text=D%C3%A9cada%20en%20marcha%3A%20Aula%20del%20Motor%20y%20Mujer%20en%20la%20Pole"
+              className={`font-normal not-italic text-[#787ff6] ${styles.dateText}`}
+            >
+              NOVIEMBRE 14-24
+            </a>
           </div>
         </div>
 
-        <div id="segundo-texto" className="grid grid-cols-6 p-10">
-          <div className="col-span-1">
-            <div className="w-6 h-6 rotate-(-90) border-t-4 border-r-4 text-[#787ff6]"></div>
-            <div
-              className="w-6 h-1 mt-[-13] rotate-135"
-              style={{ backgroundColor: "#787ff6" }}
-            ></div>
+        <div id="segundo-texto" className="grid grid-cols-6 px-10 pt-2 pb-10">
+          <div className="col-span-1 flex flex-col items-center justify-center -mt-2">
+            <a href="https://www.google.com/maps/dir//Pl.+de+Col%C3%B3n,+15,+Centro,+14001+C%C3%B3rdoba/@37.8899337,-4.8623677,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0xd6cdf653a12b631:0x1eb7a0e55142d991!2m2!1d-4.7797457!2d37.8900325?entry=ttu&g_ep=EgoyMDI1MTAwNC4wIKXMDSoASAFQAw%3D%3D">
+              <div className="w-6 h-6 rotate-(-90) border-t-4 border-r-4 text-[#787ff6]"></div>
+              <div
+                className="w-6 h-1 mt-[-13] rotate-135"
+                style={{ backgroundColor: "#787ff6" }}
+              ></div>
+            </a>
           </div>
-          <div className="lg:text-3xl md:text-xl text-s font-normal not-italic text-[#787ff6] col-span-5 pl-4">
-            PALACIO DE LA MERCED
-            <br />
-            DIPUTACIÓN DE CÓRDOBA
+          <div className="col-span-5 pl-4">
+            <a
+              href="https://www.google.com/maps/dir//Pl.+de+Col%C3%B3n,+15,+Centro,+14001+C%C3%B3rdoba/@37.8899337,-4.8623677,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0xd6cdf653a12b631:0x1eb7a0e55142d991!2m2!1d-4.7797457!2d37.8900325?entry=ttu&g_ep=EgoyMDI1MTAwNC4wIKXMDSoASAFQAw%3D%3D"
+              className={`font-normal not-italic text-[#787ff6] ${styles.locationText}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              PALACIO DE LA MERCED
+              <br />
+              DIPUTACIÓN DE CÓRDOBA
+            </a>
           </div>
         </div>
       </div>

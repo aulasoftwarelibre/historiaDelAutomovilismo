@@ -11,3 +11,25 @@
     font-size: clamp(0rem, 4.5vw, 5rem);
   }
 }
+
+.dateText {
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .dateText {
+    font-size: clamp(1rem, 2vw, 3rem);
+  }
+}
+
+.locationText {
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .locationText {
+    font-size: clamp(1rem, 2vw, 3rem);
+  }
+}
