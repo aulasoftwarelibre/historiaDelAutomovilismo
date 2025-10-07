@@ -6,7 +6,7 @@ export const Funcion = () => {
     <div className="not-italic text-black no-underline bg-white md:grid grid-cols-3">
       <div
         id="titulo"
-        className={`justify-self-start px-[5%] md:px-[15%] py-[13%] md:col-span-2 ${styles.textContainer}`}
+        className={` px-[5%] md:px-[15%] py-[13%] md:col-span-2 ${styles.textContainer}`}
       >
         <p className="text-black leading-tight">
           <span className="font-[625]">Década en marcha:</span>
