@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Década en Marcha: Aula del Motor y Mujer en la Pole
 
-## Getting Started
+> Una colaboración entre el **Aula de Software Libre** y el **Aula del Motor** de la Universidad de Córdoba
 
-First, run the development server:
+## Acerca del Proyecto
+
+Este proyecto web ha sido desarrollado como parte de la colaboración entre el Aula de Software Libre (ASL) y el Aula del Motor de la Universidad de Córdoba para dar visibilidad y promover el evento **"Década en Marcha: Aula del Motor y Mujer en la Pole"**.
+
+El evento se celebrará del **14 al 24 de noviembre** en el **Palacio de la Merced, Diputación de Córdoba**, y busca promover la presencia de la mujer en el mundo del motor, así como celebrar una década de trayectoria del Aula del Motor.
+
+## Tecnologías Utilizadas
+
+Esta es una aplicación web moderna construida con:
+
+- **[Next.js 15.3.5](https://nextjs.org)** - Framework de React para producción
+- **[React 19](https://react.dev)** - Biblioteca de JavaScript para interfaces de usuario
+- **[TypeScript](https://www.typescriptlang.org/)** - JavaScript con tipado estático
+- **[Tailwind CSS v4](https://tailwindcss.com)** - Framework de CSS utility-first
+- **[Turbopack](https://turbo.build/pack)** - Bundler de nueva generación para desarrollo rápido
+
+## Instalación y Desarrollo
+
+### Configuración Inicial
+
+1. Clona el repositorio:
+
+```bash
+git clone <url-del-repositorio>
+cd decadaEnMarcha
+```
+
+2. Instala las dependencias:
+
+```bash
+npm install
+```
+
+3. Ejecuta el servidor de desarrollo:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver el resultado.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Scripts Disponibles
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` - Inicia el servidor de desarrollo con Turbopack
+- `npm run build` - Construye la aplicación para producción
+- `npm run start` - Inicia el servidor de producción
+- `npm run lint` - Ejecuta el linter de código
 
-## Learn More
+## Estructura del Proyecto
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/
+│   ├── layout.tsx      # Layout principal de la aplicación
+│   └── page.tsx        # Página principal
+├── components/
+│   ├── intro/          # Sección de introducción
+│   ├── Invitados/      # Sección de invitados al evento
+│   ├── Schedule/       # Calendario de actividades
+│   ├── Sponsors/       # Patrocinadores del evento
+│   └── AboutUs/        # Información sobre el evento
+└── assets/             # Recursos estáticos
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Colaboradores
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Este proyecto es una colaboración entre:
 
-## Deploy on Vercel
+- **Aula de Software Libre (ASL)** - Universidad de Córdoba
+- **Aula del Motor (AM)** - Universidad de Córdoba
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Información del Evento
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Fecha:** 14-24 de Noviembre
+- **Ubicación:** Palacio de la Merced, Diputación de Córdoba
+- **Temática:** Aula del Motor y Mujer en la Pole
+
+---
