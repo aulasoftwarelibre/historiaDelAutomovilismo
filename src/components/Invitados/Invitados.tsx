@@ -23,7 +23,6 @@ const guests: Guest[] = [
     role: "Chief Financial Officer, ZimCore Hubs",
     img: "https://randomuser.me/api/portraits/women/68.jpg",
   },
-  // Aquí se puede añadir más invitados fácilmente
   {
     name: "Adri García",
     role: "Founder and Chairman, Berou Solutions Inc.",
@@ -44,7 +43,9 @@ const guests: Guest[] = [
 const Invitados: React.FC = () => {
   return (
     <div className="guests">
-      <div className="guests-title">INVITADOS</div>
+      <div className="title">
+        <p className="titleText">INVITADOS</p>
+      </div>
       <div className="guests-grid">
         {guests.map((guest, index) => (
           <div key={index} className="guest-card">
