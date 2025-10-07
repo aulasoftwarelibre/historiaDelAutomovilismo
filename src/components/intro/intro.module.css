@@ -1,0 +1,12 @@
+.textContainer {
+  container-type: inline-size;
+  display: block;
+  font-size: clamp(0rem, 9vw, 7rem);
+  line-height: 0.9;
+}
+
+@media (min-width: 768px) {
+  .textContainer {
+    font-size: clamp(0rem, 12vw, 5rem);
+  }
+}
