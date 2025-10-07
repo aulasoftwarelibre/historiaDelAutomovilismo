@@ -3,10 +3,21 @@ import styles from "./intro.module.css";
 
 export const Funcion = () => {
   return (
-    <div className="not-italic text-black no-underline bg-white md:grid grid-cols-3">
+    <div className="not-italic text-black no-underline bg-white md:grid grid-cols-2">
+      <div
+        id="logo"
+        className="px-[5%] pt-[5%] md:pt-[13%] flex justify-center order-2 md:order-2"
+      >
+        <Image
+          src="/images/Logo NOV 500x500_page-0001.jpg"
+          alt="logo decada en marcha"
+          width={500}
+          height={500}
+        />
+      </div>
       <div
         id="titulo"
-        className={` px-[5%] md:px-[15%] py-[13%] md:col-span-2 ${styles.textContainer}`}
+        className={`px-[8%] md:px-[10%] pt-[2%] pb-[13%] md:py-[13%] md:col-span-1 order-1 md:order-1 ${styles.textContainer}`}
       >
         <p className="text-black leading-tight">
           <span className="font-[625]">Década en marcha:</span>
@@ -28,21 +39,8 @@ export const Funcion = () => {
       </div>
 
       <div
-        id="logo"
-        className="mb-[100] justify-self-center max-w-50 md:p-20 md:max-w-1000"
-      >
-        <Image
-          src="/images/Logo NOV 500x500_page-0001.jpg"
-          alt="logo decada en marcha"
-          width={450}
-          height={450}
-          className="justify-self-start"
-        />
-      </div>
-
-      <div
         id="textitos"
-        className="pl-[10%] md:mt-[-10vw] lg:mt-[-8vw] mt-[-10%] mb-[10%]"
+        className="pl-[10%] md:mt-[-10vw] lg:mt-[-8vw] mt-[-10%] mb-[10%] order-3 md:order-3"
       >
         <div id="primer-texto" className="grid grid-cols-6 p-10">
           <div className="col-span-1">
