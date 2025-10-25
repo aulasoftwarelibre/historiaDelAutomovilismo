@@ -2,7 +2,7 @@ import styles from "./AboutUs.module.css";
 
 function AboutUs() {
   return (
-    <div className={styles.backgroundColor}>
+    <div className={`justify-self-center justify-items-center w-full text-black ${styles.backgroundColor}`}>
       <section className="pl-[10%] lg:pl-[5%] pr-[5%] pb-8 pt-20 max-w-5xl">
         <h1 className="font-bold">About us</h1>
         <br></br>
@@ -13,29 +13,16 @@ function AboutUs() {
           celebrate the most exciting developments in the tech industry.
         </h2>
         <br></br>
-        <button
-          className="border border-b-white mt-5 py-5 px-26 sm:px-46 md:px-66 lg:px-76 xl:px-82 shadow-md
-               hover:shadow-xl transition-shadow duration-300"
-        >
-          STAY UPDATED
-        </button>
+
       </section>
-      <section className="grid grid-cols-1 pl-[10%] lg:pl-[5%] pr-[5%] py-5 sm:grid-cols-2 gap-4 max-w-5xl">
-        <div>
+      <section className="grid grid-cols-1 pl-[10%] lg:pl-[5%] pr-[5%] py-5 sm:grid-cols-2 gap-4 max-w-5xl justify-self-center">
+        <div className="justify-self-center">
           <h1 className="font-bold">Socials</h1>
-          <a href="https://www.youtube.com/watch?v=ehpgMsgnbIE">
-            @reallygreatsite
+          <a href="https://www.instagram.com/crt_uco/">
+            @crt_uco
           </a>
         </div>
-        <div>
-          <h1 className="font-bold">Our newsletter</h1>
-          <a
-            className="underline"
-            href="https://www.youtube.com/watch?v=4SbTaGiQXxA"
-          >
-            Sign up here!
-          </a>
-        </div>
+        
       </section>
     </div>
   );

@@ -1,35 +1,37 @@
 .textContainer {
   container-type: inline-size;
   display: block;
-  font-size: clamp(0rem, 9vw, 7rem);
+  font-size: clamp(0rem, 5vw, 7rem);
   line-height: 0.9;
   white-space: nowrap;
+  text-align: justify;
 }
 
 @media (min-width: 768px) {
   .textContainer {
-    font-size: clamp(0rem, 4.5vw, 5rem);
+    font-size: clamp(0rem, 3.5vw, 5rem);
+    text-align: justify;
   }
 }
 
 .dateText {
-  font-size: clamp(1rem, 4vw, 1.5rem);
+  font-size: clamp(1rem, 4vw, 1rem);
   white-space: nowrap;
 }
 
 @media (min-width: 768px) {
   .dateText {
-    font-size: clamp(1rem, 2vw, 3rem);
+    font-size: clamp(1rem, 2vw, 2rem);
   }
 }
 
 .locationText {
-  font-size: clamp(1rem, 4vw, 1.5rem);
+  font-size: clamp(1rem, 4vw, 1rem);
   white-space: nowrap;
 }
 
 @media (min-width: 768px) {
   .locationText {
-    font-size: clamp(1rem, 2vw, 3rem);
+    font-size: clamp(1rem, 2vw, 2rem);
   }
 }

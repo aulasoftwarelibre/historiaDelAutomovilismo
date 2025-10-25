@@ -51,44 +51,49 @@ const days_list: Day[] = [
 
 export const Schedule = () => {
   return (
-    <div className="grid grid-cols-1 items-start bg-[rgb(120,127,246)] text-white justify-items-center">
-      <p className="text-center text-xs md:text-xl lg:text-2xl p-[1%] mt-10 mb-10 w-3/9 border-1 border-white font-mono tracking-widest">
-        CALENDARIO
-      </p>
-      <div className="w-8/9 pb-10">
-        {days_list.map((day) => (
-          <div key={day.id} className="mb-5">
-            <div className="justify-self-center text-xs md:text-xl lg:text-2xl font-mono">
-              {day.day}
-            </div>
-            {day.activities.map((activity) => (
-              <div key={activity.id} className={styles.centered}>
-                <div className="border-1 border-white font-mono tracking-widest pt-5 pb-5 lg:pl-12 lg:pr-12 md:pl-8 md:pr-8 pl-5 pr-5 mt-5 mb-5 flex flex-col justify-between bg-[rgb(120,127,246)] md:text-lg lg:text-2xl">
-                  <p className="mb-3">{activity.start}</p>
-                  <p className="">{activity.end}</p>
-                </div>
-                <div className="border-1 border-white w-[100%]  items-center text-center text-wrap mt-5 mb-5 bg-[rgb(120,127,246)] pb-5">
-                  <p className="text-xs md:text-xl lg:text-2xl p-2 pt-5 justify-self-center font-mono tracking-widest">
-                    {activity.title}
-                  </p>
-                  <div className=" grid grid-cols-2 items-center">
-                    <p className="p-3 text-xs md:text-lg lg:text-2xl text-gray-300">
-                      {activity.description}
+    <div className="h-full w-full bg-no-repeat bg-cover bg-center"
+          style={{
+            backgroundImage: `url("images/gradientefondo.jpeg")`, // <-- URL dinámica
+          }}>
+      <div className="grid grid-cols-1 items-start text-black justify-items-center ">
+        <p className="text-center text-xs md:text-xl lg:text-2xl p-[1%] mt-10 mb-10 w-3/9 border-1 border-black font-mono tracking-widest">
+          CALENDARIO
+        </p>
+        <div className="w-8/9 pb-10">
+          {days_list.map((day) => (
+            <div key={day.id} className="mb-5">
+              <div className="justify-self-center text-xs md:text-xl lg:text-2xl font-mono">
+                {day.day}
+              </div>
+              {day.activities.map((activity) => (
+                <div key={activity.id} className={styles.centered}>
+                  <div className="border-1 border-black font-mono tracking-widest pt-5 pb-5 lg:pl-12 lg:pr-12 md:pl-8 md:pr-8 pl-5 pr-5 mt-5 mb-5 flex flex-col justify-between bg-transparent md:text-lg lg:text-2xl">
+                    <p className="mb-3">{activity.start}</p>
+                    <p className="">{activity.end}</p>
+                  </div>
+                  <div className="border-1 border-black w-[100%]  items-center text-center text-wrap mt-5 mb-5 bg-transparent pb-5">
+                    <p className="text-xs md:text-xl lg:text-2xl p-2 pt-5 justify-self-center font-mono tracking-widest">
+                      {activity.title}
                     </p>
-                    <div className="relative w-[60%] md:w-[45%] lg:w-[35%] aspect-square justify-self-center">
-                      <Image
-                        src={activity.img}
-                        alt={activity.img}
-                        fill
-                        className="justify-self-center"
-                      />
+                    <div className=" grid grid-cols-2 items-center">
+                      <p className="p-3 text-xs md:text-lg lg:text-2xl text-gray-800">
+                        {activity.description}
+                      </p>
+                      <div className="relative w-[60%] md:w-[45%] lg:w-[35%] aspect-square justify-self-center">
+                        <Image
+                          src={activity.img}
+                          alt={activity.img}
+                          fill
+                          className="justify-self-center"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        ))}
+              ))}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

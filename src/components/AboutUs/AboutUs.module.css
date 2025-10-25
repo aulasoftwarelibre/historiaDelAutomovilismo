@@ -1,8 +1,8 @@
 .backgroundColor{
-    background-color: rgba(48,53,150,255);
+    background-color: #c4bdb3;
 }
 
 .boldPurple{
-    color: rgba(120,127,246,255);
+    color: rgb(114, 114, 114);
     font-weight: bold;
 }
