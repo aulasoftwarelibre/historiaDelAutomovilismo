@@ -104,7 +104,7 @@ const jueves13: Activity[] = [
     id: 4,
     start: "12:00",
     end: "13:00",
-    description: "Visitas guiadas",
+    description: " ",
   },
 ];
 
@@ -137,7 +137,7 @@ const viernes14: Activity[] = [
     id: 5,
     start: "13:00",
     end: "14:00",
-    description: "Visitas guiadas",
+    description: " ",
   },
 ];
 
@@ -146,7 +146,7 @@ const sabado15: Activity[] = [
     id: 1,
     start: "10:30",
     end: "11:30",
-    description: "La historia de la automoción cordobesa",
+    description: "Cristina Gutierréz",
   },
   {
     id: 2,
@@ -157,14 +157,8 @@ const sabado15: Activity[] = [
   {
     id: 3,
     start: "14:00",
-    end: "18:00",
-    description: "Pausas de comida",
-  },
-  {
-    id: 4,
-    start: "18:00",
-    end: "20:00",
-    description: "Visitas guiadas",
+    end: "15:00",
+    description: "Clausura",
   },
 ];
 
