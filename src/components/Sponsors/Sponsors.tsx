@@ -30,11 +30,7 @@ const sponsors: Sponsor[] = [
     text: "placeholder2",
     img: "/images/ab6761610000e5ebcce32307d0f312e8faf01bae.jpeg",
   },
-  {
-    id:7,
-    text:"placeholder3",
-    img:"",
-  }
+
 ];
 
 const SponsorList = () => {
