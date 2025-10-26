@@ -12,13 +12,13 @@ interface Sponsor {
 }
 
 const sponsors: Sponsor[] = [
-  { id: 1, text: /*aqui no va nombre hay que quitarselo*/"UCO", img: "/images/digref.webp" },
-  { id: 2, text: "Aula Motor", img: "/images/logo-cuadrado-simple.svg" },
-  { id: 3, text: "ASL", img: "/images/digref2.jpg" },
+  { id: 1, text: /*aqui no va nombre hay que quitarselo*/"UCO", img: "/images/UCO.png" },
+  { id: 2, text: "Aula del Motor", img: "/images/AulaMotor.png" },
+  { id: 3, text: "Aula de software libre", img: "/images/logo-cuadrado-simple.svg" },
   {
     id: 4,
     text: "Eventos sancristobal",
-    img: "/images/tumblr_e1e055a37a93139ae849f9ae19ac6b8a_de84e7e7_512.png",
+    img: "/images/logo-sancristobal.png",
   },
   {
     id: 5,

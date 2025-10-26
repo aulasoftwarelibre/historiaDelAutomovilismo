@@ -12,40 +12,197 @@ interface Activity {
   id: number;
   start: string;
   end: string;
-  title: string;
   description: string;
-  img: string;
 }
+
+const viernes7: Activity[] = [
+  {
+    id: 1,
+    start: "19:30",
+    end: "20:30",
+    description: "Inicio del evento en la diputación de Córdoba",
+  },
+  {
+    id: 2,
+    start: "20:30",
+    end: "00:00",
+    description: "Copa de vino español con autoridades e invitados",
+  },
+];
+
+const sabado8: Activity[] = [
+  {
+    id: 1,
+    start: "10:30",
+    end: "11:30",
+    description: "La historia de la automoción cordobesa",
+  },
+  {
+    id: 2,
+    start: "11:30",
+    end: "13:00",
+    description: "Visitas guiadas",
+  },
+  {
+    id: 3,
+    start: "14:00",
+    end: "18:00",
+    description: "Pausas de comida",
+  },
+  {
+    id: 4,
+    start: "18:00",
+    end: "20:00",
+    description: "Visitas guiadas",
+  },
+];
+
+const domingo9: Activity[] = [
+  {
+    id: 1,
+    start: "10:30",
+    end: "11:30",
+    description: "CERRADO",
+  },
+];
+
+const lunes10: Activity[] = [
+  {
+    id: 1,
+    start: "10:30",
+    end: "19:00",
+    description: "Exposición con entrada libre para el público general",
+  },
+];
+
+const jueves13: Activity[] = [
+  {
+    id: 1,
+    start: "10:00",
+    end: "10:30",
+    description: "Bienvenida",
+  },
+  {
+    id: 2,
+    start: "10:30",
+    end: "11:30",
+    description: "Mesa redonda: El futuro del Mercado Laboral para la empresa ",
+  },
+  {
+    id: 3,
+    start: "11:30",
+    end: "12:00",
+    description: "Coffee break",
+  },
+  {
+    id: 4,
+    start: "12:00",
+    end: "13:00",
+    description: "La investigación de la automoción en el siglo XXI",
+  },
+  {
+    id: 4,
+    start: "12:00",
+    end: "13:00",
+    description: "Visitas guiadas",
+  },
+];
 
 const viernes14: Activity[] = [
   {
     id: 1,
-    start: "9:00",
-    end: "10:00",
-    title: "APERTURA",
-    description: "Inicio del evento en la diputación de córdoba",
-    img: "/images/digref.webp",
+    start: "10:00",
+    end: "10:30",
+    description: "Bienvenida",
   },
   {
     id: 2,
-    start: "20:00",
-    end: "21:00",
-    title: "CIERRE",
-    description: "Cierre del evento",
-    img: "/images/digref2.jpg",
+    start: "10:30",
+    end: "11:30",
+    description: "Mesa redonda: El futuro del Mercado Laboral para la empresa ",
+  },
+  {
+    id: 3,
+    start: "11:30",
+    end: "12:00",
+    description: "Coffee break",
+  },
+  {
+    id: 4,
+    start: "12:00",
+    end: "13:00",
+    description: "Visitas guiadas",
+  },
+  {
+    id: 5,
+    start: "13:00",
+    end: "14:00",
+    description: "Visitas guiadas",
+  },
+];
+
+const sabado15: Activity[] = [
+  {
+    id: 1,
+    start: "10:30",
+    end: "11:30",
+    description: "La historia de la automoción cordobesa",
+  },
+  {
+    id: 2,
+    start: "11:30",
+    end: "13:00",
+    description: "Visitas guiadas",
+  },
+  {
+    id: 3,
+    start: "14:00",
+    end: "18:00",
+    description: "Pausas de comida",
+  },
+  {
+    id: 4,
+    start: "18:00",
+    end: "20:00",
+    description: "Visitas guiadas",
   },
 ];
 
 const days_list: Day[] = [
   {
     id: 1,
+    day: "Viernes 7 de Noviembre",
+    activities: viernes7,
+  },
+  {
+    id: 2,
+    day: "Sabado 8 de Noviembre",
+    activities: sabado8,
+  },
+  {
+    id: 3,
+    day: "Domingo 9 de Noviembre",
+    activities: domingo9,
+  },
+  {
+    id: 4,
+    day: "Lunes 10 a miércoles 12 de Noviembre",
+    activities: lunes10,
+  },
+  {
+    id: 5,
+    day: "Jueves 13 de Noviembre",
+    activities: jueves13,
+  },
+  {
+    id: 6,
     day: "Viernes 14 de Noviembre",
     activities: viernes14,
   },
   {
-    id: 2,
-    day: "Sabado 15 de Noviembre",
-    activities: viernes14,
+    id: 7,
+    day: "Sábado 15 de Noviembre",
+    activities: sabado15,
   },
 ];
 
@@ -74,20 +231,11 @@ export const Schedule = () => {
                     <p className="">{activity.end}</p>
                   </div>
                   <div className="border-1 border-black w-[100%]  items-center text-center text-wrap mt-5 mb-5 bg-transparent pb-5">
-                    <p className={`${styles.EventTextTitle}`}>
-                      {activity.title}
-                    </p>
                     <div className=" grid grid-cols-2 items-center">
                       <p className={`${styles.EventText}`}>
                         {activity.description}
                       </p>
                       <div className="relative w-[60%] md:w-[45%] lg:w-[35%] aspect-square justify-self-center ">
-                        <Image
-                          src={activity.img}
-                          alt={activity.img}
-                          fill
-                          className="justify-self-center"
-                        />
                       </div>
                     </div>
                   </div>
