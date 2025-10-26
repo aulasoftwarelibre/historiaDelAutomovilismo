@@ -3,7 +3,7 @@ import styles from "./intro.module.css";
 
 export const Funcion = () => {
   return (
-    <div  className="h-screen w-full bg-repeat bg-cover bg-center"
+    <div  className="w-full bg-repeat bg-cover bg-center"
           style={{
             backgroundImage: `url("images/gradientefondo.jpeg")`, // <-- URL dinámica
           }}>
