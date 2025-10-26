@@ -40,7 +40,6 @@
   font-size: clamp(0.75rem, 2.5vw, 1.25rem);
   letter-spacing: 0.1em;
   color: black;
-  font-family: mono;
   margin: 0;
 }
 
@@ -58,12 +57,7 @@
 
 @media (max-width: 767px) {
   .title {
-    width: clamp(300px, 60vw, 600px);
+    width: clamp(250px, 60vw, 600px);
   }
-
-  .titleText {
-    font-size: clamp(2.50rem, 3.5vw, 6rem);
-  }
-
 }
 

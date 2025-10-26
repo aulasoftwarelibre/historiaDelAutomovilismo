@@ -104,7 +104,7 @@ const jueves13: Activity[] = [
     id: 4,
     start: "12:00",
     end: "13:00",
-    description: " ",
+    description: "-Por definir-",
   },
 ];
 
@@ -137,7 +137,7 @@ const viernes14: Activity[] = [
     id: 5,
     start: "13:00",
     end: "14:00",
-    description: " ",
+    description: "-Por definir-",
   },
 ];
 
@@ -224,13 +224,11 @@ export const Schedule = () => {
                     <p className="mb-3">{activity.start}</p>
                     <p className="">{activity.end}</p>
                   </div>
-                  <div className="border-1 border-black w-[100%]  items-center text-center text-wrap mt-5 mb-5 bg-transparent pb-5">
-                    <div className=" grid grid-cols-2 items-center">
-                      <p className={`${styles.EventText}`}>
+                  <div className="border-1 border-black w-[100%] grid font-mono items-center text-center text-wrap mt-5 mb-5 bg-transparent px-5">
+                    <div className="font-mono grid items-center">
+                      <p className={`align-middle items-center ${styles.EventText}`}>
                         {activity.description}
                       </p>
-                      <div className="relative w-[60%] md:w-[45%] lg:w-[35%] aspect-square justify-self-center ">
-                      </div>
                     </div>
                   </div>
                 </div>

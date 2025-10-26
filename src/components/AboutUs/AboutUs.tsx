@@ -2,7 +2,10 @@ import styles from "./AboutUs.module.css";
 
 function AboutUs() {
   return (
-    <div className={`justify-self-center justify-items-center w-full text-black ${styles.backgroundColor}`}>
+    <div className={`justify-self-center justify-items-center w-full text-black h-full bg-no-repeat bg-cover bg-center`}
+          style={{
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("images/gradientefondo.jpeg")`, // <-- URL dinámica
+          }}>
       <section className="pl-[10%] lg:pl-[5%] pr-[5%] pb-8 pt-20 max-w-5xl">
         <h1 className={styles.titleText}>About us</h1>
         <br></br>

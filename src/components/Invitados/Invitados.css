@@ -132,10 +132,6 @@ body {
 
 @media (max-width: 767px) {
   .title {
-    width: clamp(300px, 60vw, 600px);
-  }
-
-  .titleText {
-    font-size: clamp(2.50rem, 3.5vw, 6rem);
+    width: clamp(250px, 60vw, 600px);
   }
 }
