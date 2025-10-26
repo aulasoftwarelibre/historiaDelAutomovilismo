@@ -56,9 +56,11 @@ export const Schedule = () => {
             backgroundImage: `url("images/gradientefondo.jpeg")`, // <-- URL dinámica
           }}>
       <div className="grid grid-cols-1 items-start text-black justify-items-center ">
-        <p className="text-center text-xs md:text-xl lg:text-2xl p-[1%] mt-10 mb-10 w-3/9 border-1 border-black font-mono tracking-widest">
-          CALENDARIO
-        </p>
+          <div className={styles.title}> 
+            <p className={styles.titleText}>
+                CALENDARIO
+            </p>
+          </div>
         <div className="w-8/9 pb-10">
           {days_list.map((day) => (
             <div key={day.id} className="mb-5">
@@ -72,14 +74,14 @@ export const Schedule = () => {
                     <p className="">{activity.end}</p>
                   </div>
                   <div className="border-1 border-black w-[100%]  items-center text-center text-wrap mt-5 mb-5 bg-transparent pb-5">
-                    <p className="text-xs md:text-xl lg:text-2xl p-2 pt-5 justify-self-center font-mono tracking-widest">
+                    <p className={`${styles.EventTextTitle}`}>
                       {activity.title}
                     </p>
                     <div className=" grid grid-cols-2 items-center">
-                      <p className="p-3 text-xs md:text-lg lg:text-2xl text-gray-800">
+                      <p className={`${styles.EventText}`}>
                         {activity.description}
                       </p>
-                      <div className="relative w-[60%] md:w-[45%] lg:w-[35%] aspect-square justify-self-center">
+                      <div className="relative w-[60%] md:w-[45%] lg:w-[35%] aspect-square justify-self-center ">
                         <Image
                           src={activity.img}
                           alt={activity.img}

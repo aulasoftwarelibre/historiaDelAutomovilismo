@@ -24,7 +24,7 @@ export const Funcion = () => {
           className={`px-[8%] md:px-[5%] pt-[2%] pb-[13%] md:py-[13%] text-justify md:col-span-1 order-1 md:order-1 w-[99%] ${styles.textContainer}`}
         >
           <p className="text-black leading-tight text-justify w-[99%]">
-            <span className="font-[625] text-justify">Historia del automivilismo</span>
+            <span className="font-[625] text-justify">Historia del automovilismo</span>
             <br />
             <span className="font-[550] text-justify">de la provincia de Córdoba</span>
           </p>

@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Década en marcha",
+  title: "Historia del Automovilismo",
   description:
-    'Web del evento "Década en marcha:Aula del Motor y Mujer en la Pole" creada por el equipo del Aula de Software Libre',
+    'Web del evento "Historia del Automovilismo:Aula del Motor y Mujer en la Pole" creada por el equipo del Aula de Software Libre',
   icons: {
     icon: [
       { url: "/favicon/favicon-16x16.png", sizes: "16x16", type: "image/png" },

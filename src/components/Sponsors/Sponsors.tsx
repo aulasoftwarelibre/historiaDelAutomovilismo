@@ -62,10 +62,12 @@ export const Sponsors = () => {
           }}>
       <div className="w-1/1 h-3/4 p-[3%]">
         <div className={styles.centered}>
-          <p className="tracking-widest border-1 text-black border-black pl-[12%] pr-[12%] pt-[1.3%] pb-[1.3%] text-xs md:text-xl lg:text-2xl font-mono">
-            PATROCINADORES Y COLABORADORES
-          </p>
-          <SponsorList />
+          <div className={styles.title}>
+            <p className={styles.titleText}>
+              PATROCINADORES Y COLABORADORES
+            </p>
+          </div>
+            <SponsorList />
         </div>
       </div>
     </div>

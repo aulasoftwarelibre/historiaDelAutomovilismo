@@ -8,7 +8,6 @@ body {
 /* Contenedor principal */
 .guests {
   text-align: center;
-  padding: 2rem;
 }
 
 /* Título */
@@ -23,6 +22,7 @@ body {
   margin-bottom: 2%;
   border: 1px solid white;
   padding: clamp(0.5rem, 1vw, 0.75rem);
+  margin-top: clamp(20px, 2vw, 100px);
 }
 
 /* Texto del título */
@@ -35,15 +35,6 @@ body {
 }
 
 /* Media query para pantallas md y superiores (768px+) */
-@media (min-width: 768px) {
-  .title {
-    width: clamp(300px, 60vw, 600px);
-  }
-
-  .titleText {
-    font-size: clamp(1.25rem, 3vw, 1.5rem);
-  }
-}
 
 /* Grid para invitados */
 .guests-grid {
@@ -66,8 +57,8 @@ body {
 }
 
 .guest-card img {
-  width: 60px;
-  height: 60px;
+  width: clamp(5rem, 10vw, 20rem);
+  height : auto;
   border-radius: 8px;
   object-fit: cover;
 }
@@ -92,13 +83,59 @@ body {
   .guests-grid {
     grid-template-columns: 1fr; /* siempre 1 columna */
   }
-
+  
   .guest-card {
     flex-direction: column;
     text-align: center;
   }
-
+  
   .guest-card img {
     margin-bottom: 0.5rem;
+  }
+}
+
+
+@media (min-width: 1016px) {
+  .guests-grid {
+    grid-template-columns: 1fr 1fr 1fr; /* siempre 1 columna */
+  }
+  
+  .guest-card {
+    flex-direction: column;
+    text-align: center;
+    
+  }
+  
+  .guest-card img {
+    margin-bottom: 0.5rem;
+  }
+  
+  .guest-name{
+    font-size: clamp(1rem, 2.5vw, 6rem);
+  }
+  
+  .guest-role {
+    font-size: clamp(0.75rem, 1.5vw, 3rem);
+  }
+  
+}
+
+@media (min-width: 768px) {
+  .title {
+    width: clamp(300px, 60vw, 600px);
+  }
+
+  .titleText {
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    width: clamp(300px, 60vw, 600px);
+  }
+
+  .titleText {
+    font-size: clamp(2.50rem, 3.5vw, 6rem);
   }
 }
