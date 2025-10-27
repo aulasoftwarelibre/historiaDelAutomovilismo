@@ -75,7 +75,7 @@ Este proyecto es una colaboración entre:
 
 ## Información del Evento
 
-- **Fecha:** 14-24 de Noviembre
+- **Fecha:** 7-15 de Noviembre
 - **Ubicación:** Palacio de la Merced, Diputación de Córdoba
 - **Temática:** Aula del Motor y Mujer en la Pole
 
