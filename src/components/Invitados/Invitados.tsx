@@ -43,7 +43,6 @@ const guests: Guest[] = [
 const Invitados: React.FC = () => {
   return (
     <div className="guests">
-
       <div className="title">
         <p className="titleText">INVITADOS</p>
       </div>

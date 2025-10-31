@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Schedule.module.css";
-import Image from "next/image";
 
 interface Day {
   id: number;
