@@ -1,4 +1,4 @@
-FROM node:22
+FROM node:22 AS historia_automovilismo
 
 WORKDIR /app
 COPY . /app
