@@ -101,7 +101,7 @@ const jueves13: Activity[] = [
     description: "La investigación de la automoción en el siglo XXI",
   },
   {
-    id: 4,
+    id: 5,
     start: "12:00",
     end: "13:00",
     description: "-Por definir-",
@@ -202,16 +202,16 @@ const days_list: Day[] = [
 
 export const Schedule = () => {
   return (
-    <div className="h-full w-full bg-no-repeat bg-cover bg-center"
-          style={{
-            backgroundImage: `url("images/gradientefondo.jpeg")`, // <-- URL dinámica
-          }}>
+    <div
+      className="h-full w-full bg-no-repeat bg-cover bg-center"
+      style={{
+        backgroundImage: `url("images/gradientefondo.jpeg")`, // <-- URL dinámica
+      }}
+    >
       <div className="grid grid-cols-1 items-start text-black justify-items-center ">
-          <div className={styles.title}> 
-            <p className={styles.titleText}>
-                CALENDARIO
-            </p>
-          </div>
+        <div className={styles.title}>
+          <p className={styles.titleText}>CALENDARIO</p>
+        </div>
         <div className="w-8/9 pb-10">
           {days_list.map((day) => (
             <div key={day.id} className="mb-5">
@@ -226,7 +226,9 @@ export const Schedule = () => {
                   </div>
                   <div className="border-1 border-black w-[100%] grid font-mono items-center text-center text-wrap mt-5 mb-5 bg-transparent px-5">
                     <div className="font-mono grid items-center">
-                      <p className={`align-middle items-center ${styles.EventText}`}>
+                      <p
+                        className={`align-middle items-center ${styles.EventText}`}
+                      >
                         {activity.description}
                       </p>
                     </div>
