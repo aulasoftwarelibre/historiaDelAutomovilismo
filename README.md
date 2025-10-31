@@ -1,10 +1,10 @@
-# Década en Marcha: Aula del Motor y Mujer en la Pole
+# Historia del automovilismo de la provincia de Córdoba
 
 > Una colaboración entre el **Aula de Software Libre** y el **Aula del Motor** de la Universidad de Córdoba
 
 ## Acerca del Proyecto
 
-Este proyecto web ha sido desarrollado como parte de la colaboración entre el Aula de Software Libre (ASL) y el Aula del Motor de la Universidad de Córdoba para dar visibilidad y promover el evento **"Década en Marcha: Aula del Motor y Mujer en la Pole"**.
+Este proyecto web ha sido desarrollado como parte de la colaboración entre el Aula de Software Libre (ASL) y el Aula del Motor de la Universidad de Córdoba para dar visibilidad y promover el evento **"Historia del automovilismo de la provincia de Córdoba"**.
 
 El evento se celebrará del **14 al 24 de noviembre** en el **Palacio de la Merced, Diputación de Córdoba**, y busca promover la presencia de la mujer en el mundo del motor, así como celebrar una década de trayectoria del Aula del Motor.
 
@@ -77,6 +77,6 @@ Este proyecto es una colaboración entre:
 
 - **Fecha:** 7-15 de Noviembre
 - **Ubicación:** Palacio de la Merced, Diputación de Córdoba
-- **Temática:** Aula del Motor y Mujer en la Pole
+- **Temática:** Historia del automovilismo
 
 ---
