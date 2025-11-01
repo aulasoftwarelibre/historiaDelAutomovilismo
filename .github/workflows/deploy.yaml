@@ -43,7 +43,7 @@ jobs:
           push: true
           target: historia_automovilismo
           tags: |
-            ghcr.io/aulasoftwarelibre/historia_automovilismo:latest
-            ghcr.io/aulasoftwarelibre/historia_automovilismo:${{ steps.extract_tag.outputs.tag }}
+            ghcr.io/aulasoftwarelibre/historiadelautomovilismo:latest
+            ghcr.io/aulasoftwarelibre/historiadelautomovilismo:${{ steps.extract_tag.outputs.tag }}
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache,mode=max
