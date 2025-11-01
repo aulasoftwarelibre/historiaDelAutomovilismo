@@ -26,6 +26,19 @@ body {
   margin-top: clamp(20px, 2vw, 100px);
 }
 
+.title2 {
+  display: flex;
+  flex-direction: column;
+  columns: 2;
+  position: relative;
+  width: clamp(200px, 50vw, 600px);
+  margin: 0 auto;
+  margin-bottom: 2%;
+  border: 1px solid white;
+  padding: clamp(0.5rem, 1vw, 0.75rem);
+  margin-top: clamp(20px, 2vw, 100px);
+}
+
 /* Texto del título */
 .titleText {
   font-size: clamp(0.75rem, 2vw, 1rem);
@@ -134,3 +147,14 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .title2 {
+    width: clamp(250px, 60vw, 600px);
+  }
+}
+
+@media (min-width: 768px) {
+  .title2 {
+    width: clamp(300px, 60vw, 600px);
+  }
+}
