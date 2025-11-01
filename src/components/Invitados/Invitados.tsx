@@ -1,67 +1,34 @@
 import React from "react";
 import "./Invitados.css";
 
-type Guest = {
-  name: string;
-  role: string;
-  img: string;
-};
 
-const guests: Guest[] = [
-  {
-    name: "Harper Gilbert",
-    role: "Chief Executive Officer, Heiman Software Labs",
-    img: "https://randomuser.me/api/portraits/women/44.jpg",
-  },
-  {
-    name: "Rocco Holden",
-    role: "Founder and Chairman, Berou Solutions Inc.",
-    img: "https://randomuser.me/api/portraits/men/46.jpg",
-  },
-  {
-    name: "Crystal Buckner",
-    role: "Chief Financial Officer, ZimCore Hubs",
-    img: "https://randomuser.me/api/portraits/women/68.jpg",
-  },
-  {
-    name: "Adri García",
-    role: "Founder and Chairman, Berou Solutions Inc.",
-    img: "https://randomuser.me/api/portraits/men/46.jpg",
-  },
-  {
-    name: "Alicia M",
-    role: "Computer",
-    img: "https://randomuser.me/api/portraits/women/68.jpg",
-  },
-  {
-    name: "David",
-    role: "Engineer",
-    img: "https://randomuser.me/api/portraits/men/46.jpg",
-  },
-  {
-    name: "Darío M",
-    role: "CEO",
-    img: "https://randomuser.me/api/portraits/men/40.jpg",
-  },
-];
 
 const Invitados: React.FC = () => {
   return (
     <div className="guests">
       <div className="title">
-        <p className="titleText">INVITADOS</p>
+        <p className="titleText">¡APUNTATE!</p>
       </div>
-      <div className="guests-grid">
-        {guests.map((guest, index) => (
-          <div key={index} className="guest-card">
-            <img src={guest.img} alt={guest.name} />
-            <div className="guest-info">
-              <div className="guest-name">{guest.name}</div>
-              <div className="guest-role">{guest.role}</div>
-            </div>
+      <div className="h-[40%] bg-black w-200 bg-repeat bg-cover bg-left title2"
+          style={{
+            backgroundImage: `url("images/gradientefondo.jpeg")`, // <-- URL dinámica
+          }}>
+        
+        <div className=" grid grid-cols-2">
+          <div className="self-center">
+            <p className="text-[#786960] font-bold font-mono lg:text-xl text-xs lg-pb-20 pb-10">¡PULSA AQUÍ!</p>
+            <a href="https://entradas.tickety.es/events/exposicion-historia-del-automovilismo-de-la-provincia-de-cordoba-1900-1980">
+              <img className="w-100 animate-bounce justify-self-center self-center shadow-2xl " src="https://d2il8hfach02z9.cloudfront.net/uploads/saas_provider/logo_cfe_header/fb1e33540b64b7756bb20403d300d755514b9eb8/LOGO_WEB_PNG_BLANCO.png?v=1745250076" alt="logo empresa" />
+            </a>
           </div>
-        ))}
+          <a className="w-full p-2" href="https://entradas.tickety.es/events/exposicion-historia-del-automovilismo-de-la-provincia-de-cordoba-1900-1980">
+            <img className="w-40 justify-self-center border-8" src="images/event.png" alt="imagen evento"/>
+          </a>
+        </div>
+        
+
       </div>
+
     </div>
   );
 };

@@ -14,7 +14,7 @@ const sponsors: Sponsor[] = [
   { id: 1, img: "/images/UCO.png" },
   { id: 2, img: "/images/AulaMotor.png" },
   { id: 3, img: "/images/logo-cuadrado-simple.svg" },
-  { id: 4, img: "/images/logo-sancristobal.png"},
+  { id: 4, img: "/images/logotipo-EPSC.png"},
 ];
 
 const SponsorList = () => {
@@ -25,7 +25,7 @@ const SponsorList = () => {
           <Image
             src={sponsor.img}
             alt="sponsor logo"
-            width={150}
+            width={170}
             height={150}
             style={{ paddingBottom: "10px" }}
           />
@@ -45,7 +45,7 @@ export const Sponsors = () => {
         <div className={styles.centered}>
           <div className={styles.title}>
             <p className={`lg:text-2xl text-[10px] text-wrap ${styles.titleText}`}>
-              PATROCINADORES Y COLABORADORES
+              COLABORADORES
             </p>
           </div>
             <SponsorList />
