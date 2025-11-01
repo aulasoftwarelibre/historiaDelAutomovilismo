@@ -8,6 +8,7 @@ body {
 /* Contenedor principal */
 .guests {
   text-align: center;
+  padding-bottom: 2%;
 }
 
 /* Título */
@@ -58,7 +59,7 @@ body {
 
 .guest-card img {
   width: clamp(5rem, 10vw, 20rem);
-  height : auto;
+  height: auto;
   border-radius: 8px;
   object-fit: cover;
 }
@@ -83,41 +84,38 @@ body {
   .guests-grid {
     grid-template-columns: 1fr; /* siempre 1 columna */
   }
-  
+
   .guest-card {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .guest-card img {
     margin-bottom: 0.5rem;
   }
 }
 
-
 @media (min-width: 1016px) {
   .guests-grid {
     grid-template-columns: 1fr 1fr 1fr; /* siempre 1 columna */
   }
-  
+
   .guest-card {
     flex-direction: column;
     text-align: center;
-    
   }
-  
+
   .guest-card img {
     margin-bottom: 0.5rem;
   }
-  
-  .guest-name{
+
+  .guest-name {
     font-size: clamp(1rem, 2.5vw, 6rem);
   }
-  
+
   .guest-role {
     font-size: clamp(0.75rem, 1.5vw, 3rem);
   }
-  
 }
 
 @media (min-width: 768px) {
@@ -135,3 +133,4 @@ body {
     width: clamp(250px, 60vw, 600px);
   }
 }
+

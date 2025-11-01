@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Historia del Automovilismo",
   description:
-    'Web del evento "Historia del Automovilismo:Aula del Motor y Mujer en la Pole" creada por el equipo del Aula de Software Libre',
+    'Web del evento "Historia del Automovilismo de la provincia de Córdoba" creada por el equipo del Aula de Software Libre',
   icons: {
     icon: [
       { url: "/favicon/favicon-16x16.png", sizes: "16x16", type: "image/png" },
