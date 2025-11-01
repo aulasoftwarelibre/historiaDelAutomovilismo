@@ -3,25 +3,29 @@ import styles from "./intro.module.css";
 
 export const Funcion = () => {
   return (
-    <div  className="w-full bg-repeat bg-cover bg-center"
+  <div  className="w-full bg-repeat bg-cover bg-left"
           style={{
             backgroundImage: `url("images/gradientefondo.jpeg")`, // <-- URL dinámica
           }}>
-      <div className="not-italic text-black no-underline md:grid grid-cols-2">
+    <div className="w-full bg-repeat bg-cover bg-center "
+          style={{
+            backgroundImage: `url("images/patroncoches.webp")`, // <-- URL dinámica
+          }}>
+      <div className="not-italic text-black no-underline md:grid grid-cols-2 lg:bg-gradient-to-r to-transparent from-[#ffffff] bg-gradient-to-t md:bg-gradient-to-r md:bg-transparent bg-[#ffffff7e]">
         <div
           id="logo"
           className="px-[5%] pt-[5%] md:pt-[13%] flex justify-center order-2 md:order-2"
         >
           <Image
-            src="/images/logofinal.png"
+            src="/images/coche.webp"
             alt="logo decada en marcha"
-            width={680}
-            height={680}
+            width={880}
+            height={780}
           />
         </div>
         <div
           id="titulo"
-          className={`px-[8%] md:px-[5%] pt-[2%] pb-[13%] md:py-[13%] text-justify md:col-span-1 order-1 md:order-1 w-[99%] ${styles.textContainer}`}
+          className={`px-[8%] md:px-[5%] pt-[2%] pb-[13%] md:py-[13%] text-justify md:col-span-1 order-1 md:order-1 w-[99%] ${styles.textContainer} `}
         >
           <p className="text-black leading-tight text-justify w-[99%]">
             <span className="font-[625] text-justify">Historia del automovilismo</span>
@@ -42,7 +46,7 @@ export const Funcion = () => {
 
         <div
           id="textitos"
-          className="md:mt-[-10vw] lg:mt-[-15vw] mt-[-10%] mb-[10%] order-3 md:order-3"
+          className="md:mt-[-10vw] lg:mt-[-15vw] mt-[-10%] order-3 md:order-3"
         >
           <div id="primer-texto" className="grid grid-cols-6 px-10 pt-10 pb-2">
             <div className="col-span-1 flex flex-col items-center justify-center -mt-2">
@@ -89,7 +93,8 @@ export const Funcion = () => {
           </div>
         </div>
       </div>
- </div> 
+    </div>
+  </div> 
  );
 };  
 
