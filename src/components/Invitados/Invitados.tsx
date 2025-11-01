@@ -38,6 +38,11 @@ const guests: Guest[] = [
     role: "Engineer",
     img: "https://randomuser.me/api/portraits/men/46.jpg",
   },
+  {
+    name: "Darío M",
+    role: "CEO",
+    img: "https://randomuser.me/api/portraits/men/40.jpg",
+  },
 ];
 
 const Invitados: React.FC = () => {
