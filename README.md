@@ -6,7 +6,7 @@
 
 Este proyecto web ha sido desarrollado como parte de la colaboración entre el Aula de Software Libre (ASL) y el Aula del Motor de la Universidad de Córdoba para dar visibilidad y promover el evento **"Historia del automovilismo de la provincia de Córdoba"**.
 
-El evento se celebrará del **14 al 24 de noviembre** en el **Palacio de la Merced, Diputación de Córdoba**, y busca promover la presencia de la mujer en el mundo del motor, así como celebrar una década de trayectoria del Aula del Motor.
+El evento se celebrará del **7 al 15 de noviembre** en el **Rectorado de la Universidad de Córdoba** y busca promover la Historia del automovilismo de la provincia de Córdoba así como celebrar una década de trayectoria del Aula del Motor.
 
 ## Tecnologías Utilizadas
 
@@ -76,7 +76,7 @@ Este proyecto es una colaboración entre:
 ## Información del Evento
 
 - **Fecha:** 7-15 de Noviembre
-- **Ubicación:** Palacio de la Merced, Diputación de Córdoba
+- **Ubicación:** Rectorado de la Universidad de Córdoba
 - **Temática:** Historia del automovilismo
 
 ---
