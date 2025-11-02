@@ -19,7 +19,7 @@ function AboutUs() {
       </section>
       <section className="grid grid-cols-1 pl-[10%] lg:pl-[5%] pr-[5%] py-5 sm:grid-cols-2 gap-4 max-w-5xl justify-self-center">
         <div className="justify-self-center">
-          <h1 className={styles.text}>Socials</h1>
+          <h1 className={styles.text}>Redes Sociales</h1>
           <a href="https://www.instagram.com/crt_uco/">
             @crt_uco
           </a>
