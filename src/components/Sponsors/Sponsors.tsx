@@ -25,7 +25,7 @@ const SponsorList = () => {
           <Image
             src={sponsor.img}
             alt="sponsor logo"
-            width={170}
+            width={150}
             height={150}
             style={{ paddingBottom: "10px" }}
           />
@@ -37,7 +37,7 @@ const SponsorList = () => {
 
 export const Sponsors = () => {
   return (
-    <div  className="h-full w-full bg-no-repeat bg-cover bg-center"
+    <div  className="h-full w-full bg-no-repeat bg-cover bg-center bg-fixed"
           style={{
             backgroundImage: `url("images/gradientefondo.jpeg")`, // <-- URL dinámica
           }}>
