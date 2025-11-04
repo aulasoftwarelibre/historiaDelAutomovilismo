@@ -19,7 +19,7 @@ const viernes7: Activity[] = [
     id: 1,
     start: "19:30",
     end: "",
-    description: "Inauguración de la exposición con autoridades e invitados",
+    description: "Inauguración de la exposición con autoridades e invitados (A puerta cerrada)",
   },
 ];
 
