@@ -140,7 +140,7 @@ const sabado15: Activity[] = [
     id: 1,
     start: "10:00",
     end: "12:30",
-    description: "Apertura de visita libre al público",
+    description: "Exposicion cerrada al publico general",
   },
   {
     id: 2,
